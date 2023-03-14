@@ -8,6 +8,13 @@ $('#sendemail').click(function(){
     sendMail.click()
 })
 
-$('.btn-course').click(function() {
-    $(".modal").modal('show');
+$('.btn-course').click(function(e) {
+    e.preventDefault();
+    $(".modal").modal('show').find('.modal-content').load('pages/form.html');
 });
+/*
+$('.btn-course').on('click', function(e){
+    e.preventDefault();
+    $(".modal").modal('show').find('.modal-content').load($('/pages/form.html'));
+  });
+*/
