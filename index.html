@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Ciudad Pastel</title>
-    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <link rel="icon" type="image/x-icon" href="/img/log.svg">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Escuela de pastelería, Cursos de pastelería, Clases de pastelería" name="keywords">
     <meta content="Aprende a preparar postres y decoraciones. Ofrecemos cursos y clases para todos los niveles. ¡Ven a aprender y conviértete en un profesional!" name="description">
@@ -41,6 +41,42 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- Modal Start-->
+    <div class="modal" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+          <!--  <div class="modal-header">
+              <h5 class="modal-title" id="title"> ¡Gracias por su interes en los cursos! </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <div class="col col-12 m-2 px-4">
+                            <input type="text" id="Cname" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col col-12 m-2 px-4">
+                            <input type="text" id="Cemail" class="form-control" placeholder="Correo Electronico">
+                        </div>
+                        <div class="col col-12 m-2 px-4">
+                            <input type="text" id="Ctel" class="form-control" placeholder="Numero de Celular">
+                        </div>
+                        <div class="col col-12 m-2 p-4">
+                            <textarea type="text" id="Cdesc" class="form-control" placeholder="Describenos que en que cursos estas interesado y nosotros te mandaremos la información a tu correo."></textarea>
+                        </div>
+    
+                    </div>
+    
+    
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="sendemail" class="btn btn-secondary" data-bs-dismiss="modal">Enviar</button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <!-- Modal End -->
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -74,6 +110,7 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
+                                <object data="/img/log.svg" width="150" height="150"> </object>
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">los mejores cursos</h5>
                                 <h1 class="display-3 text-white animated slideInDown">El mejor espacio para Aprender Pasteleria</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Masterclass presenciales con las mejores las recetas</p>
@@ -84,11 +121,12 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="/img/c2.jpg" alt="">
+                <img class="img-fluid" src="img/c2.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
+                                <object data="/img/log.svg" width="150" height="150"> </object>
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">aprende de los mejores</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Aprendizaje garantizado por instructores calificados</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Desarrolla todas las habilidades preparando deliciosos postres.</p>
@@ -161,8 +199,8 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Bienvenido a la Academia Ciudad Pastel</h1>
-                    <p class="mb-4">Desarrolla tus habilidades y potencia tus habilidades en la pastelería.</p>
-                    <p class="mb-4">Somos una academia dedicada a acompañar a nuestros estudiantes en el aprendizaje de mano de profesionales en el arte culinario de la decoración de pasteles. Te daremos todo lo necesario para la elaboración de deliciosas creaciones hechas por ti mismo.</p>
+                    <p class="mb-4">¡Desarrolla y potencia tus habilidades en pastelería!</p>
+                    <p class="mb-4">Somos una academia dedicada a acompañar a nuestros estudiantes en el aprendizaje, de mano de profesionales, en el arte culinario de la decoración de pasteles. Te daremos todo lo necesario para la elaboración de deliciosas creaciones hechas por ti mismo.</p>
                     <p class="mb-4">Inscríbete a uno de nuestros cursos y desarrolla tus habilidades.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
@@ -202,36 +240,36 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/fig.jpg" alt="">
+                            <a class="position-relative d-block overflow-hidden btn-course" >
+                                <img role="button" id="imag1" class="img-fluid" src="img/fig.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0 text-primary">Modelado de figuras</h5>
+                                    <h5 role="button" class="m-0 text-primary">Modelado de figuras</h5>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="/img/cur2.jpg" alt="">
+                            <a class="position-relative d-block overflow-hidden btn-course"  >
+                                <img role="button" class="img-fluid" src="img/cur2.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0 text-primary">Decoraciones novedosas</h5>
+                                    <h5 role="button" class="m-0 text-primary">Decoraciones novedosas</h5>
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="/img/cur3.jpg" alt="">
+                            <a class="position-relative d-block overflow-hidden  btn-course" >
+                                <img role="button" class="img-fluid" src="img/cur3.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0 text-primary">Técnicas avanzadas de pastelería</h5>
+                                    <h5 role="button" class="m-0 text-primary">Técnicas avanzadas de pastelería</h5>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="/img/cur4.jpg" alt="" style="object-fit: cover;">
+                    <a class="position-relative d-block h-100 overflow-hidden  btn-course">
+                        <img role="button" class="img-fluid position-absolute w-100 h-100" src="img/cur4.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0 text-primary">Cursos demostrativos</h5>
+                            <h5  role="button" class="m-0 text-primary">Cursos demostrativos</h5>
                         </div>
                     </a>
                 </div>
@@ -421,7 +459,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a id="mailA"></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -433,6 +471,7 @@
 
     <!--Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/sendEmail.js"></script>
 </body>
 
 </html>
